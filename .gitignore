@@ -1,0 +1,18 @@
+# Ignore all virtual environments named 'venv' recursively
+**/venv/
+
+# Ignore Python cache and build files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.egg
+**/*.egg-info/
+**/dist/
+**/build/
+**/*.whl
+
+# Ignore Pipenv and Poetry files
+**/Pipfile
+**/Pipfile.lock
+**/poetry.lock
