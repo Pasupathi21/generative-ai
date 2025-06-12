@@ -1,0 +1,13 @@
+download & install Ollama in your system
+
+check ollama installed or not in local machine
+    cmd: ollama -v
+
+download model from ollama
+    cmd: ollama run <model_name>
+
+list all downloaded model in local machine
+    cmd: ollama list
+
+run chatbot locally
+    cmd: streamlit run app.py
