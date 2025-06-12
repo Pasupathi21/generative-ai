@@ -12,6 +12,7 @@ Miniconda installation -
 
 3) Deactivate the environment:
     conda deactivate
+    ex: (conda activate ./venv)
 
 4) Remove an environment (if needed):
     conda remove --name myenv --all
