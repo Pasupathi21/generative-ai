@@ -1,0 +1,47 @@
+ANN:
+
+| Feature                      | Description                                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
+| **Purpose**                  | General-purpose neural network, often used for tasks like classification, regression. |
+| **Structure**                | Input → Hidden Layers → Output                                                        |
+| **Memory/Sequence Handling** | ❌ Cannot handle sequential data (no memory of past inputs).                           |
+| **Parallelization**          | ✅ Fully parallelizable (since layers are independent).                                |
+| **Use Cases**                | Image classification, tabular data, simple function approximations.                   |
+
+
+
+RNN:
+
+| Feature                      | Description                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------------- |
+| **Purpose**                  | Designed to handle **sequential data** (e.g. time series, text).             |
+| **Structure**                | Loops over time steps: each output depends on previous input + hidden state. |
+| **Memory/Sequence Handling** | ✅ Has memory (remembers past inputs through hidden states).                  |
+| **Parallelization**          | ❌ Not parallel-friendly due to sequential nature.                            |
+| **Problems**                 | Struggles with long-term dependencies (vanishing gradients).                 |
+| **Use Cases**                | Language modeling, speech recognition, time-series prediction.               |
+
+
+TRANSFORMER:
+
+| Feature                      | Description                                                       |
+| ---------------------------- | ----------------------------------------------------------------- |
+| **Purpose**                  | Efficiently handle sequential data using **self-attention**.      |
+| **Structure**                | Uses attention mechanism to relate different positions in input.  |
+| **Memory/Sequence Handling** | ✅ Handles long-range dependencies better than RNNs.               |
+| **Parallelization**          | ✅ Fully parallelizable — faster to train than RNNs.               |
+| **Use Cases**                | NLP (GPT, BERT), image generation, code completion, vision tasks. |
+| **Key Technique**            | **Self-Attention**, **Positional Encoding**                       |
+
+
+Comparision:
+
+| Feature               | ANN            | RNN                 | Transformer            |
+| --------------------- | -------------- | ------------------- | ---------------------- |
+| Handles sequences?    | ❌ No           | ✅ Yes               | ✅ Yes (better)         |
+| Memory of past inputs | ❌ None         | ✅ Yes (short-term)  | ✅ Yes (long-range)     |
+| Parallel training     | ✅ Yes          | ❌ No                | ✅ Yes                  |
+| Complexity            | ⭐ Simple       | ⭐⭐ Moderate         | ⭐⭐⭐ High               |
+| Best at               | Classification | Sequence prediction | Language modeling, NLP |
+
+

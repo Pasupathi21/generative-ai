@@ -1,0 +1,4 @@
+    In AI, a Transformer is a type of model architecture — specifically a neural network architecture — 
+not just a piece of software or a single technique.
+
+    It is designed for processing sequential data (like language, code, or even music) more efficiently than older models like RNNs or LSTMs.
