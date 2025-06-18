@@ -1,0 +1,7 @@
+packages 
+
+phidata -> Framework for Agent creagtion
+
+GroqCloud -> Accessing big LLM model from cloud
+
+key: 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
